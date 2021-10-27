@@ -13,6 +13,7 @@ header{
 }
 table {
     text-align: center;
+    font-size: 30px;
     border: 10px;
     border-color: goldenrod;    
     border-style: double;
@@ -50,12 +51,9 @@ nav{
     justify-content: space-around;
     
 }
-
-
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-gap: 10px;
     padding: 10px;
 }
@@ -66,14 +64,32 @@ nav{
     font-size: 30px;
     text-align: center;
 }
+.grid-item img{
+    height: 500px;
+}
+button{
+    border-color: black;
+    border-top: 0;
+    
+}
+
+
 .btn{
+    
     display: none;
     align-self: center;
 }
-@media (max-width: 769PX) {
+@media only screen and (max-width: 769px){
+
+    .grid-item img{
+        height: 100px;
+    }
+    table{
+        font-size: 10px;
+    }
     nav{
         position: sticky;
-        top 50;
+        top: 60;
         align-items:center;
         flex-direction: column;
         width: 100%;
@@ -98,7 +114,7 @@ nav{
         margin: 6px;
         width: 40px;
         height: 3px;
-        background: #333;
+        background: black;
     }
     .ocultar{
         display: none;
@@ -106,7 +122,6 @@ nav{
     .desplegar{
         display: block;
         align-self: center;
-
     }
 }
 

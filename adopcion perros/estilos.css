@@ -73,7 +73,7 @@ nav{
 @media (max-width: 769PX) {
     nav{
         position: sticky;
-        
+        top 50;
         align-items:center;
         flex-direction: column;
         width: 100%;

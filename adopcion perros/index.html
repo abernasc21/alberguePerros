@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -21,6 +22,11 @@
     <a href="#nosotros" class="ocultar">Nosotros</a>
     <a href="#contactos" class="ocultar">Contactos</a>
     <a href="#ubicacion" class="ocultar">Ubicación</a>
+    <a href="#donacion">DONAR</a>
+    
+    
+    
+    
 </nav>
 <br><br>
 <section>
@@ -44,17 +50,17 @@
     <article>
         <h1 id="adopcion">Adoptar</h1>
         <div class="grid-container">
-            <div class="grid-item"><img src="img/perro1.jpg" height="100px"></div>
+            <div class="grid-item"><img src="img/perro1.jpg" height="50px"></div>
             <di class="grid-item"> Pegaso</di>
-            <div class="grid-item"><img src="img/perro2.jpg" height="100px"></div>
+            <div class="grid-item"><img src="img/perro2.jpg" height="50px"></div>
             <di class="grid-item"> Hunter</di>
-            <di class="grid-item"> <img src="img/perro3.jpg" height="100px"></di>
+            <di class="grid-item"> <img src="img/perro3.jpg" height="50px"></di>
             <di class="grid-item"> Vshuu</di>
-            <di class="grid-item"> <img src="img/perro4.jpg" height="100px"></di>
+            <di class="grid-item"> <img src="img/perro4.jpg" height="50px"></di>
             <di class="grid-item"> Shamma</di>
-            <di class="grid-item"> <img src="img/perro5.jpg" height="100px"></di>
+            <di class="grid-item"> <img src="img/perro5.jpg" height="500px"></di>
             <di class="grid-item"> Brokas</di>
-            <di class="grid-item"> <img src="img/perro6.jpg" height="100px"></di>
+            <di class="grid-item"> <img src="img/perro6.jpg" height="50px"></di>
             <di class="grid-item"> Max</di>
     </article>
 </section>
@@ -163,7 +169,41 @@
         </p>
     </article>
 </section>
+
+<section id="donacion">
+    <article align="center">
+        <h1> Donación</h1>
+            <form class="donar">
+                <h1>Información del donador</h1>
+                <input type="text" name="nombres" placeholder="Nombres"><br>
+                <input type="text" name="apellidos" placeholder="Apellidos"><br>
+                <h1>Cantidad</h1>
+                <input type="radio" name="100bs">100bs
+                <input type="radio" name="200bs">200bs
+                <input type="radio" name="300bs">300bs
+                <br>
+                <input type="radio" name="500bs">500bs
+                <input type="radio" name="1000bs">1000bs
+                <input type="radio text" name="propuesta">bs
+                <h1>Información de la tarjeta</h1>
+                <input type="text" name="ntarjeta" placeholder="Numero de la Tarjeta">
+                <input type="text" name="cvc" placeholder="CVC"><br>
+                <label for="pais"> País: </label>
+                    <select name="pais" value="pais">
+                        <option>Bolivia</option>
+                        <option>Perú</option>
+                        <option>Brasil</option>
+                        <option>Argentina</option>
+                        <option>Costa Rica</option>
+                    </select>
+                <input type="text" name="titular" placeholder="Titular de la Tarjeta"><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+    </article>
 </section>
+
+
 <footer align="center">
     DERECHOS RESERVADOS ABC
 </footer>

@@ -8,7 +8,6 @@ header{
     background-image: url(img/adopcion.jpg);
     width: 100%;
     height: 10%;
-
     background-repeat: repeat-x;
 }
 table {
@@ -26,7 +25,9 @@ td,tr{
 td img{
     width: 100%;
 }
+/** el boton y el menu */
 .menu a:hover{
+    transition: 50ms;
     background-color: black;
     padding: 25px;
 }
@@ -51,6 +52,19 @@ nav{
     justify-content: space-around;
     
 }
+button{
+    border-color: black;
+    border-top: 0;
+    
+}
+
+
+.btn{
+    
+    display: none;
+    align-self: center;
+}
+/** ------------------------------*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -67,26 +81,21 @@ nav{
 .grid-item img{
     height: 500px;
 }
-button{
-    border-color: black;
-    border-top: 0;
+
+.donar{
+    background-color: goldenrod;
+    align-self:flex-end;
     
 }
 
-
-.btn{
-    
-    display: none;
-    align-self: center;
+input{
+    padding: 10px;
+    margin: 10px;
 }
+
+
 @media only screen and (max-width: 769px){
-
-    .grid-item img{
-        height: 100px;
-    }
-    table{
-        font-size: 10px;
-    }
+    /** el boton y el menu */
     nav{
         position: sticky;
         top: 60;
@@ -122,6 +131,14 @@ button{
     .desplegar{
         display: block;
         align-self: center;
+    }
+    /** --------------------------*/
+
+    .grid-item img{
+        height: 100px;
+    }
+    table{
+        font-size: 10px;
     }
 }
 
